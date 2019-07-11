@@ -22,6 +22,13 @@ and (orientation: portrait)
         display: inline-block;
     }
 
+    .banner__arbol{
+        background-image: url(../assets/img/arbolMovil.png);
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+    }
+
 }
 
 @media only screen
@@ -37,19 +44,33 @@ and (orientation: portrait)
 
 /* ---------- VERTICAL ---------- */
 @media only screen
-and (min-device-width:768px)
+and (min-width:451px) and (max-width: 1023px)
 and (orientation: portrait)
 {
-
-
-
+    .banner__arbol{
+        background-image: url(../assets/img/arbolTablet.png);
+        height: 500px;
+        background-size: cover;
+        background-position: center;
+    }
 }
+
+
+   
+
+
 /* ---------- HORIZONTAL ---------- */
 @media only screen
-and (min-device-width:1024px)
+and (min-device-width:812px)
 and (orientation: landscape)
 {
-
+    .banner__arbol{
+        background-image: url(../assets/img/arbolTablet.png);
+        height: 500px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
 
 }
@@ -98,6 +119,18 @@ and (min-width:1366px)
     .barraNav__nav--contactar a::before{
         content: "Contactar";
     }
+
+
+    /* banner */
+    .banner__arbol{
+        background-image: url(../assets/img/arbolescritorio.png);
+        height: 750px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
 
 }
 
